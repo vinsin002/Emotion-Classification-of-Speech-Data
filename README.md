@@ -114,7 +114,7 @@ Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping 
 
 - `mars_emotion_class.ipynb` – Main Jupyter notebook for data processing, model training, and evaluation
 - `app.py` – Script for model inference or deployment
-- `emotion_classifier_model.keras`, `emotion_classifier_model.keras` – Saved trained models
+- `emotion_classifier_model.h5`, `emotion_classifier_model.keras` – Saved trained models
 - `features.csv`, `speech_data.csv` – Processed data/feature files
 - `requirements.txt` – Python dependencies
 - `Audio_Speech_Actors_01-24/`, `Audio_Song_Actors_01-24/` – Audio data directories
