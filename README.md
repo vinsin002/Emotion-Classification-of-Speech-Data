@@ -1,6 +1,4 @@
-Emotion Classification of Speech Data
-A deep learning project for classifying emotions in speech and song audio using the RAVDESS dataset. The app is deployed on Streamlit:
-Try the App
+Emotion Classification of Speech Data: A deep learning project for classifying emotions in speech and song audio using the RAVDESS dataset. 
 
 Overview
 This project implements a 1D Convolutional Neural Network (CNN) to recognize emotions from audio files. Both speech and song samples are processed to classify into one of eight emotions:
@@ -55,6 +53,8 @@ Install Requirements
 text
 pip install -r requirements.txt
 Run the App
+
+
 
 text
 streamlit run app.py
