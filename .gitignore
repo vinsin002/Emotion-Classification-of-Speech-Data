@@ -43,21 +43,3 @@ ENV/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Project specific
-temp.wav
-*.h5
-*.keras
-*.pkl
-*.joblib
-*.csv
-logs/
-
-# Streamlit
-.streamlit/
-
-# Audio files
-*.wav
-*.mp3
-*.flac
-*.ogg 
