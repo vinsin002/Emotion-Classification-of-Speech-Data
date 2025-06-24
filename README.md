@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a deep learning pipeline for speech emotion recognition using audio data from the RAVDESS dataset. The solution processes both speech and song audio files, extracts relevant features, and trains a 1D Convolutional Neural Network (CNN) to classify emotions into eight categories. The implementation uses Python, popular data science libraries, and TensorFlow/Keras for model building and training[1].
+This project implements a deep learning pipeline for speech emotion recognition using audio data from the RAVDESS dataset. The solution processes both speech and song audio files, extracts relevant features, and trains a 1D Convolutional Neural Network (CNN) to classify emotions into eight categories. The implementation uses Python, popular data science libraries, and TensorFlow/Keras for model building and training.
 
 ---
 
@@ -21,7 +21,7 @@ This project implements a deep learning pipeline for speech emotion recognition 
   - fear
   - disgust
   - surprise
-- **Total Speech Samples:** 1,440[1]
+- **Total Speech Samples:** 1,440
 
 ---
 
@@ -30,7 +30,7 @@ This project implements a deep learning pipeline for speech emotion recognition 
 - **Directory Parsing:** The notebook lists actor directories and iterates through `.wav` files, extracting emotion labels from file names by parsing the filename convention.
 - **DataFrames:** Paths and emotion labels are stored in pandas DataFrames for further processing.
 - **Label Mapping:** Numeric emotion codes are mapped to string labels (e.g., `1 → neutral`, `2 → calm`, etc.).
-- **Feature Extraction:** Typically, MFCCs or similar audio features are extracted for each sample[1].
+- **Feature Extraction:** Typically, MFCCs or similar audio features are extracted for each sample.
 
 ---
 
@@ -63,7 +63,7 @@ A deep 1D CNN is used for sequential audio data:
 - **Regularization:** Dropout and L2 kernel regularization
 - **Optimizer:** Adam (learning rate 0.001)
 - **Loss Function:** Categorical Crossentropy
-- **Metrics:** Accuracy[1]
+- **Metrics:** Accuracy
 
 ---
 
@@ -73,10 +73,10 @@ A deep 1D CNN is used for sequential audio data:
 - **Batch Size:** 64
 - **Validation Split:** 15%
 - **Class Weights:** Used to handle class imbalance.
-- **Callbacks:** EarlyStopping and ReduceLROnPlateau for robust training[1].
+- **Callbacks:** EarlyStopping and ReduceLROnPlateau for robust training.
 
 **Example Training Progress:**  
-Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping typically triggers around epoch 32, with the best validation accuracy observed near 68%[1].
+Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping typically triggers around epoch 32, with the best validation accuracy observed near 68%.
 
 ---
 
@@ -84,7 +84,7 @@ Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping 
 
 - **Metrics:** Accuracy and loss are tracked for both training and validation sets.
 - **Confusion Matrix:** Predicted vs. actual emotion labels are compared to assess model performance.
-- **Example Results:** The model demonstrates strong performance on several emotion classes, with some confusion between similar emotions (e.g., fear vs. sad)[1].
+- **Example Results:** The model demonstrates strong performance on several emotion classes, with some confusion between similar emotions (e.g., fear vs. sad).
 
 ---
 
@@ -100,7 +100,7 @@ Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping 
 ### Running the Notebook
 
 1. Place the RAVDESS dataset in the expected directory structure.
-2. Run all cells in `mars_emotion_class.ipynb` to preprocess data, extract features, train the model, and evaluate results[1].
+2. Run all cells in `mars_emotion_class.ipynb` to preprocess data, extract features, train the model, and evaluate results.
 
 ### Running the App
 
@@ -116,7 +116,7 @@ Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping 
 - `emotion_classifier_model.keras`, `emotion_classifier_model.keras` – Saved trained models
 - `features.csv`, `speech_data.csv` – Processed data/feature files
 - `requirements.txt` – Python dependencies
-- `Audio_Speech_Actors_01-24/`, `Audio_Song_Actors_01-24/` – Audio data directories[1]
+- `Audio_Speech_Actors_01-24/`, `Audio_Song_Actors_01-24/` – Audio data directories
 
 ---
 
@@ -124,5 +124,5 @@ Rapid improvement in accuracy and loss over the first 20 epochs. Early stopping 
 
 - **Best Validation Accuracy:** ~68% (varies depending on run and hyperparameters)
 - **Strengths:** Good generalization across most emotion classes.
-- **Limitations:** Some confusion between acoustically similar emotions; further improvements possible with data augmentation or advanced architectures[1].
+- **Limitations:** Some confusion between acoustically similar emotions; further improvements possible with data augmentation or advanced architectures.
 
