@@ -28,23 +28,23 @@ Model Architecture
 The model is a deep 1D CNN designed for sequential audio data:
 
 Layer Type	Output Shape	Parameters
-Conv1D (128 filters)	(None, 162, 128)	768
-BatchNormalization	(None, 162, 128)	512
-MaxPooling1D	(None, 41, 128)	0
-Conv1D (256 filters)	(None, 41, 256)	164,096
-BatchNormalization	(None, 41, 256)	1,024
-MaxPooling1D	(None, 11, 256)	0
-Conv1D (128 filters)	(None, 11, 128)	98,432
-BatchNormalization	(None, 11, 128)	512
-Dropout (0.3)	(None, 11, 128)	0
-MaxPooling1D	(None, 3, 128)	0
-Conv1D (64 filters)	(None, 3, 64)	24,640
-BatchNormalization	(None, 3, 64)	256
-Dropout (0.3)	(None, 3, 64)	0
-GlobalAveragePooling1D	(None, 64)	0
-Dense (64 units, relu)	(None, 64)	4,160
-Dropout (0.4)	(None, 64)	0
-Dense (8 units, softmax)	(None, 8)	520
+Conv1D (128 filters)	(None, 162, 128)	768 
+BatchNormalization	(None, 162, 128)	512 
+MaxPooling1D	(None, 41, 128)	0 
+Conv1D (256 filters)	(None, 41, 256)	164,096 
+BatchNormalization	(None, 41, 256)	1,024 
+MaxPooling1D	(None, 11, 256)	0 
+Conv1D (128 filters)	(None, 11, 128)	98,432 
+BatchNormalization	(None, 11, 128)	512 
+Dropout (0.3)	(None, 11, 128)	0 
+MaxPooling1D	(None, 3, 128)	0 
+Conv1D (64 filters)	(None, 3, 64)	24,640 
+BatchNormalization	(None, 3, 64)	256 
+Dropout (0.3)	(None, 3, 64)	0 
+GlobalAveragePooling1D	(None, 64)	0 
+Dense (64 units, relu)	(None, 64)	4,160 
+Dropout (0.4)	(None, 64)	0 
+Dense (8 units, softmax)	(None, 8)	520 
 Total Parameters: ~295,000
 
 Activation Functions: ReLU (hidden layers), Softmax (output)
