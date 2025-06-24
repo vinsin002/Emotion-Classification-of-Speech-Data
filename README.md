@@ -4,7 +4,7 @@ Try the App
 
 Overview
 This project implements a 1D Convolutional Neural Network (CNN) to recognize emotions from audio files. Both speech and song samples are processed to classify into one of eight emotions:
-neutral, calm, happy, sad, angry, fear, disgust, surprise.
+neutral, calm, happy, sad, angry, fear, disgust, surprise. 
 
 Features
 Audio Input: Supports both speech and song samples from the RAVDESS dataset.
